@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/stm32-freertos-f765ii.elf",
+            "name": "Debug",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "stlink"
+        },
+        {
+            "name": "cmake_setup",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/path_helper.ps1",
+            "args": []
+        }
+    ]
+}
+
