@@ -6,17 +6,17 @@
     "configurations": [
         {
             "cwd": "${workspaceFolder}",
-            "executable": "./build/stm32-freertos-f765ii.elf",
+            "executable": "./build/Debug/stm32-freertos-f765ii.elf",
             "name": "Debug",
             "request": "launch",
             "type": "cortex-debug",
             "runToEntryPoint": "main",
-            "showDevDebugOutput": "none",
+            "showDevDebugOutput": "raw",
             "servertype": "stlink",
-            "armToolchainPath": "C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin"
+            "armToolchainPath": "C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin"        
         },
         {
-            "name": "cmake_setup",
+            "name": "Debug_cmake",
             "type": "PowerShell",
             "request": "launch",
             "script": "${workspaceFolder}/path_helper.ps1",
